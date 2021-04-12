@@ -10,7 +10,7 @@
  * The result should be [-1, 150, 160, 170, -1, -1, 180, 190]
  */
 function sortByHeight(arr) {
-   return arr.sort();
+  return arr.sort();
 }
 
 module.exports = sortByHeight;

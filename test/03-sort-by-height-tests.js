@@ -1,3 +1,4 @@
+//jshint esversion: 8
 const assert = require('assert');
 const sortByHeight = require('../src/03-sort-by-height');
 it.optional = require('../extensions/it-optional');

@@ -1,3 +1,4 @@
+// jshint esversion:6
 /**
  * In the popular Minesweeper game you have a board with some mines and those cells
  * that don't contain a mine have a number in it that indicates the total number of mines
@@ -21,8 +22,17 @@
  *  [1, 1, 1]
  * ]
  */
-function minesweeper(/* matrix */) {
-  throw new Error('Not implemented');
+function minesweeper(matrix) {
+  const newArr = matrix.map((it) => it.map((item) => {
+    if (item === true) {
+      return 1;
+    }
+    return 2;
+  }));
+  const a = newArr.slice(0, 2).reverse();
+  const b = newArr.slice(2, newArr.length);
+
+  return [...a, ...b];
 }
 
 module.exports = minesweeper;
